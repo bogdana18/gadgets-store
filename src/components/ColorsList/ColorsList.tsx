@@ -1,8 +1,8 @@
 import classNames from 'classnames';
 import { FC } from 'react';
 import { Link } from 'react-router-dom';
-import { DetailsProduct } from '../../types/DetailsProduct';
 import { colors, ColorsType } from '../../types/Colors';
+import { DetailsProduct } from '../../types/DetailsProduct';
 import './colors-list.scss';
 
 type Props = {
