@@ -18,3 +18,12 @@ App is built using functional components and React Hooks.
 Each component is abstract and fully reusable. Components are styled using Sass (SCSS).
 BEM methodology is used for naming and styling.
 
+# How to run project locally
+- Fork and clone this repository
+- Run `npm install` to install all dependencies
+- Run `npm start` to start the app
+- Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+
+# Dependencies
+- Node.version: `v14.16.1` or higher
+- NPM.version: `8.15.0` or higher

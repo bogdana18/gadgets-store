@@ -1,8 +1,8 @@
-import { FC, useState } from 'react';
+import { FC } from 'react';
 import { useAppContext } from '../../context/AppContext';
 import { CartItem } from '../../components/CartItem';
 import { ProductInCart } from '../../types/ProductInCart';
-import { Modal } from '../../components/Modal';
+// import { Modal } from '../../components/Modal';
 import { ButtonBack } from '../../components/ButtonBack';
 import './cart.scss';
 
@@ -12,7 +12,7 @@ type Props = {
 
 export const Cart: FC<Props> = ({ products }) => {
   const { inCartCount } = useAppContext();
-  const [isOpenModal, setIsOpenModal] = useState(false);
+  // const [isOpenModal, setIsOpenModal] = useState(false);
 
   const totalPrice = () => {
     return products.reduce(
@@ -47,18 +47,20 @@ export const Cart: FC<Props> = ({ products }) => {
                 <p className="cart__total-count">{`Total for ${inCartCount} items`}</p>
               </div>
 
-              <button
+              <a
+                rel="nofollow"
+                href="https://secure.wayforpay.com/qr/qb11a8ee22ed5"
                 type="button"
-                className="cart__button button"
-                onClick={() => setIsOpenModal(true)}
+                className="cart__button button  pay__link"
+                // onClick={() => setIsOpenModal(true)}
               >
                 Checkout
-              </button>
-              {isOpenModal && (
-                <div className="cart__modal">
+              </a>
+              { /* {isOpenModal && (
+                  <div className="cart__modal">
                   <Modal setIsOpenModal={setIsOpenModal} />
                 </div>
-              )}
+            )} */ }
             </div>
           </div>
         )}
