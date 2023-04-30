@@ -10,9 +10,11 @@
   }
 
   &__img {
+    flex-grow: 1;
     width: 100%;
-    height: 100%;
-    object-fit: fill;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    object-position: top 50px left 60px;
   }
 
   &__box-img {
@@ -23,8 +25,16 @@
 
     transition: all 0.3s;
 
-    &:hover {
-      border: 1px solid $primary;
+    &--phones {
+      background-color: $colorRoseGold;
+    }
+
+    &--tablets {
+      background-color: $secondary;
+    }
+
+    &--accessories {
+      background-color: $colorRoseRed;
     }
   }
 
