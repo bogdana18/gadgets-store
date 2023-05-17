@@ -52,3 +52,47 @@
   justify-content: center;
   align-items: center;
 }
+
+%container {
+  max-width: 320px;
+  margin: 0 auto;
+  padding: 0 20px;
+
+  @include onTablet {
+    max-width: 700px;
+  }
+
+  @include onDesktop {
+    max-width: 1170px;
+  }
+}
+
+%container-tablet {
+  margin: 0 auto;
+
+  @include onTablet {
+    max-width: 700px;
+    padding: 0 20px;
+  }
+
+  @include onDesktop {
+    max-width: none;
+    padding: 0;
+  }
+}
+
+%container-desktop {
+  @include onDesktop {
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+}
+
+%container-mobile {
+  @include onMobile {
+    max-width: 320px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+}

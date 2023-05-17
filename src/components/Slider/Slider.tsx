@@ -27,7 +27,7 @@ export const Slider: FC<Props> = ({ images }) => {
       </div>
       <div
         className="slider__main"
-        style={{ backgroundImage: `url(_new/${selected})` }}
+        style={{ backgroundImage: `url(new/${selected})` }}
       />
     </div>
   );

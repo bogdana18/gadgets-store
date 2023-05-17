@@ -1,3 +1,5 @@
+@import "../../styles/utils/mixins";
+
 .home-page {
   &__carousel {
     margin-top: 40px;
@@ -9,6 +11,7 @@
 
   &__categories {
     margin-bottom: 80px;
+    display: flex;
   }
 
   &__title {

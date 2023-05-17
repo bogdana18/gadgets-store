@@ -1,6 +1,6 @@
 import classNames from 'classnames';
 import { memo } from 'react';
-import { useLocation } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import { Logo } from '../Logo/Logo';
 import arrowUp from '../../assets/svg/arrowUp.svg';
 import { Pathname } from '../../types/Pathname';
@@ -20,34 +20,34 @@ export const Footer = memo(() => {
           <Logo />
           <ul className="footer__list">
             <li className="footer__item">
-              <a
-                href="https://github.com/bogdana18"
+              <Link
+                to="https://github.com/bogdana18"
                 target="_blank"
                 className="footer__link"
                 rel="noreferrer"
               >
                 github
-              </a>
+              </Link>
             </li>
             <li className="footer__item">
-              <a
-                href="https://github.com/"
+              <Link
+                to="/contacts"
                 target="_blank"
                 className="footer__link"
                 rel="noreferrer"
               >
                 contacts
-              </a>
+              </Link>
             </li>
             <li className="footer__item">
-              <a
-                href="https://t.me/lexusenko"
+              <Link
+                to="https://t.me/lexusenko"
                 target="_blank"
                 className="footer__link"
                 rel="noreferrer"
               >
                 rights
-              </a>
+              </Link>
             </li>
           </ul>
           <button
